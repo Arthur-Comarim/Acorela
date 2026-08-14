@@ -32,22 +32,33 @@ body {
 
 /* DIVIDERS */
 .double-divider {
-  width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* Espaço bem fino entre a linha laranja e a verde */
+  margin: 3rem 0; /* Margem padrão em cima e embaixo */
 }
 
+/* Linha do TOPO: Fica à DIREITA e ocupa cerca de 65% da largura */
+.double-divider.top {
+  width: 65%;
+  margin-left: auto; /* Empurra para a direita */
+}
+
+/* Linha do BOTTOM: Fica à ESQUERDA e ocupa cerca de 45% da largura */
+.double-divider.bottom {
+  width: 45%;
+  margin-right: auto; /* Garante que fique na esquerda */
+}
+
+/* Espessura e cores das linhas */
 .divider-orange {
-  height: 3px;
+  height: 2.5px;
   background-color: var(--orange);
 }
 
 .divider-green {
-  height: 3px;
+  height: 2.5px;
   background-color: var(--green-bright);
-}
-
-.margin-top-large {
-  margin-top: 3rem;
 }
 
 /* HEADER */
