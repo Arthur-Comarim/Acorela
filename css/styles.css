@@ -22,6 +22,7 @@ body {
   color: var(--text-dark);
   background-color: #ffffff;
   overflow-x: hidden;
+  background-color: #f6fcf8;
 }
 
 .container {
@@ -36,18 +37,21 @@ body {
   flex-direction: column;
   gap: 2px; /* Espaço bem fino entre a linha laranja e a verde */
   margin: 3rem 0; /* Margem padrão em cima e embaixo */
+ /* Garante que o fundo seja transparente */
 }
 
 /* Linha do TOPO: Fica à DIREITA e ocupa cerca de 65% da largura */
 .double-divider.top {
   width: 65%;
   margin-left: auto; /* Empurra para a direita */
+    background-color: #f6fcf8;
 }
 
 /* Linha do BOTTOM: Fica à ESQUERDA e ocupa cerca de 45% da largura */
 .double-divider.bottom {
   width: 45%;
   margin-right: auto; /* Garante que fique na esquerda */
+    background-color: #f6fcf8;
 }
 
 /* Espessura e cores das linhas */
