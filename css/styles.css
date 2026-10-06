@@ -379,9 +379,11 @@ button {
 .placeholder-img {
   background-color: #b3dfbe;
   height: 240px;
+  width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   border-radius: 4px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   margin-bottom: 1.5rem;
