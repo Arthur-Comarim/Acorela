@@ -20,7 +20,6 @@
 body {
   font-family: var(--font-body);
   color: var(--text-dark);
-  background-color: #ffffff;
   overflow-x: hidden;
   background-color: #f6fcf8;
 }
@@ -35,26 +34,22 @@ body {
 .double-divider {
   display: flex;
   flex-direction: column;
-  gap: 2px; /* Espaço bem fino entre a linha laranja e a verde */
-  margin: 3rem 0; /* Margem padrão em cima e embaixo */
- /* Garante que o fundo seja transparente */
+  gap: 2px;
+  margin: 3rem 0;
 }
 
-/* Linha do TOPO: Fica à DIREITA e ocupa cerca de 65% da largura */
 .double-divider.top {
   width: 65%;
-  margin-left: auto; /* Empurra para a direita */
-    background-color: #f6fcf8;
+  margin-left: auto;
+  background-color: #f6fcf8;
 }
 
-/* Linha do BOTTOM: Fica à ESQUERDA e ocupa cerca de 45% da largura */
 .double-divider.bottom {
   width: 45%;
-  margin-right: auto; /* Garante que fique na esquerda */
-    background-color: #f6fcf8;
+  margin-right: auto;
+  background-color: #f6fcf8;
 }
 
-/* Espessura e cores das linhas */
 .divider-orange {
   height: 2.5px;
   background-color: var(--orange);
@@ -350,7 +345,7 @@ button {
   display: block;
 }
 
-/* PORTAL SECTION */
+/* ===== PORTAL DE INFORMAÇÕES (CORREÇÃO DE ESPAÇAMENTO) ===== */
 .portal-section {
   padding: 4rem 0;
   background-color: #f6fcf8;
@@ -361,83 +356,100 @@ button {
   font-size: 2rem;
   font-weight: 800;
   color: var(--text-dark);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   letter-spacing: 0.5px;
 }
 
+/* Layout em Grid com alinhamento vertical total */
 .portal-layout {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  align-items: stretch; /* Faz a coluna da direita ter exatamente a mesma altura da esquerda */
 }
 
+/* POST 1 (DESTAQUE ESQUERDA) */
 .portal-main-feature {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.placeholder-img {
+.placeholder-img, .main-image-wrapper {
+  width: 100%;
+  height: 280px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
   background-color: #b3dfbe;
-  height: 240px;
-  width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  border-radius: 4px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  margin-bottom: 1.5rem;
+}
+
+.portal-main-img, .placeholder-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .feature-text h3 {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   font-weight: 800;
-  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
 }
 
 .feature-text p {
-  font-size: 0.85rem;
-  color: #555;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  color: #444444;
+  line-height: 1.6;
   margin-bottom: 0.8rem;
 }
 
 .feature-text .small-text {
-  font-size: 0.78rem;
-  color: #777;
+  font-size: 0.8rem;
+  color: #777777;
 }
 
+/* POSTS LATERAIS (DIREITA) - DISTRIBUIÇÃO PERFEITA */
 .portal-sub-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui os 3 cards por igual no espaço vertical */
+  gap: 1.2rem;
 }
 
 .portal-card {
   cursor: pointer;
   background-color: var(--bg-dark);
-  padding: 0.8rem;
-  border-radius: 4px;
-  text-align: center;
-  transition: transform 0.2s;
+  padding: 1.1rem 1.4rem;   /* Padding interno ajustado */
+  border-radius: 6px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Alinha o conteúdo no topo */
-  height: 100%;                /* Ocupa a altura total da célula do Grid */
+  flex-direction: row;
+  align-items: center;      /* Centraliza verticalmente o ícone/imagem e o texto */
+  gap: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
   box-sizing: border-box;
+  flex: 1;                  /* Faz cada um dos 3 cards ter exatamente o mesmo tamanho proporcional */
+  max-height: 150px;        /* Evita que os cards fiquem gigantescos/altos demais */
 }
 
 .portal-card:hover {
-  transform: scale(1.02);
+  transform: translateX(4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card-thumb {
-  width: 100%;
-  height: 120px;
+  width: 95px;               /* Tamanho fixo e proporcional da imagem */
+  height: 95px;
   object-fit: cover;
-  margin-bottom: 0.5rem;
-  flex-shrink: 0;             /* Impede a imagem de encolher */
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-bottom: 0;
   background-color: #2a3b38;
 }
 
@@ -445,10 +457,21 @@ button {
   color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.75rem;
-  display: block;
-  margin-top: auto;            /* Empurra o texto pro fundo do card uniformemente */
-  margin-bottom: auto;
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.3;
+  margin: 0;
+  flex: 1;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .portal-layout {
+    grid-template-columns: 1fr;
+  }
+  .portal-card {
+    max-height: none;
+  }
 }
 
 /* FOOTER */
@@ -540,6 +563,13 @@ footer {
   }
   .portal-layout, .connect-grid, .strengthen-grid, .footer-grid {
     grid-template-columns: 1fr;
+  }
+  .portal-main-feature {
+    flex-direction: column;
+  }
+  .placeholder-img {
+    width: 100%;
+    height: 280px;
   }
 }
 
