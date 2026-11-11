@@ -84,7 +84,7 @@ Depois acesse `http://localhost:8000` no seu navegador.
 7. **Information Portal** - Portal de documentos e agendas
 8. **Footer** - Informações de contato e endereço
 
-## 🔧 Personalização
+##  Personalização
 
 ### Alterar Cores
 
@@ -127,12 +127,7 @@ A página é totalmente responsiva com breakpoints em:
 - Integração com contatos externos
 - Alertas customizados
 
-##  Contatos
 
-Os ícones de contato no footer estão configurados para:
-- **Email:** contato@acorela.com.br
-- **WhatsApp:** +55 62 99999-9999
-- **Instagram:** @acorela
 
 Atualize esses valores em `index.html` conforme necessário.
 
