@@ -2,7 +2,7 @@
 
 Landing page profissional para a ACORELA (Associação de Cotistas do Resort do Lago), desenvolvida em **HTML, CSS e JavaScript puro**.
 
-## 📁 Estrutura de Arquivos
+##  Estrutura de Arquivos
 
 ```
 acorela-landing-standalone/
@@ -14,7 +14,7 @@ acorela-landing-standalone/
 └── README.md           # Este arquivo
 ```
 
-## 🚀 Como Usar
+##  Como Usar
 
 ### Opção 1: Abrir no VS Code (Recomendado)
 
@@ -51,7 +51,7 @@ python -m SimpleHTTPServer 8000
 
 Depois acesse `http://localhost:8000` no seu navegador.
 
-## 🎨 Paleta de Cores
+##  Paleta de Cores
 
 - **Teal Escuro:** `#2d4a4a` (Fundo principal, header, footer)
 - **Teal Claro:** `#4dd0e1` (Destaque, divisores)
@@ -59,21 +59,21 @@ Depois acesse `http://localhost:8000` no seu navegador.
 - **Verde:** `#22c55e` (Divisores)
 - **Branco:** `#ffffff` (Texto em fundos escuros)
 
-## 🔤 Tipografia
+##  Tipografia
 
 - **Headers:** Poppins (Google Fonts)
 - **Corpo:** Lora (Google Fonts)
 
-## ✨ Recursos
+##  Recursos
 
-- ✅ Design responsivo (mobile, tablet, desktop)
-- ✅ Animações suaves ao scroll
-- ✅ Botões com efeito ripple
-- ✅ Navegação suave
-- ✅ Integração com contatos (Email, WhatsApp, Instagram)
-- ✅ Seções: Header, Sobre, Conectar, Depoimentos, Missão/Visão/Valores, Fortalecer, Portal de Informações, Footer
+-  Design responsivo (mobile, tablet, desktop)
+-  Animações suaves ao scroll
+-  Botões com efeito ripple
+-  Navegação suave
+-  Integração com contatos (Email, WhatsApp, Instagram)
+-  Seções: Header, Sobre, Conectar, Depoimentos, Missão/Visão/Valores, Fortalecer, Portal de Informações, Footer
 
-## 📝 Seções da Landing Page
+##  Seções da Landing Page
 
 1. **Header** - Logo e apresentação da ACORELA
 2. **About** - Descrição da organização
@@ -84,7 +84,7 @@ Depois acesse `http://localhost:8000` no seu navegador.
 7. **Information Portal** - Portal de documentos e agendas
 8. **Footer** - Informações de contato e endereço
 
-## 🔧 Personalização
+##  Personalização
 
 ### Alterar Cores
 
@@ -112,14 +112,14 @@ Exemplo:
 <img src="images/sua-imagem.jpg" alt="Descrição">
 ```
 
-## 📱 Responsividade
+##  Responsividade
 
 A página é totalmente responsiva com breakpoints em:
 - **Mobile:** até 480px
 - **Tablet:** até 768px
 - **Desktop:** 1024px+
 
-## 🎯 Funcionalidades JavaScript
+##  Funcionalidades JavaScript
 
 - Scroll suave para links internos
 - Animações ao entrar em viewport
@@ -127,36 +127,14 @@ A página é totalmente responsiva com breakpoints em:
 - Integração com contatos externos
 - Alertas customizados
 
-## 📞 Contatos
 
-Os ícones de contato no footer estão configurados para:
-- **Email:** contato@acorela.com.br
-- **WhatsApp:** +55 62 99999-9999
-- **Instagram:** @acorela
 
 Atualize esses valores em `index.html` conforme necessário.
 
-## 🌐 Deploy
 
-Para publicar a página online, você pode usar:
-
-- **GitHub Pages** - Grátis, vinculado ao GitHub
-- **Netlify** - Drag and drop, muito fácil
-- **Vercel** - Otimizado para performance
-- **Firebase Hosting** - Integrado com Google
-- **Seu próprio servidor** - Hospedagem compartilhada ou dedicada
-
-## 📄 Licença
+##  Licença
 
 Este projeto foi desenvolvido para a ACORELA. Todos os direitos reservados.
 
-## 💡 Dicas
-
-- Use a extensão "Prettier" no VS Code para formatar o código automaticamente
-- Teste a página em diferentes navegadores (Chrome, Firefox, Safari, Edge)
-- Use o DevTools do navegador (F12) para testar responsividade
-- Comprima as imagens antes de fazer upload para melhorar performance
-
 ---
 
-**Desenvolvido com ❤️ para ACORELA**
